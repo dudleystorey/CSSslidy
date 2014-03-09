@@ -4,8 +4,7 @@ box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 body { 
 text-align: center; 
-background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/teal-bokeh.jpg);
-background-color: #223; background-size: cover; background-repeat: no-repeat;
+background-color: #221; background-size: cover; background-repeat: no-repeat;
 background-attachment: fixed; font-family: "museo-sans",sans-serif; color: #fff; 
 }
 h1 { font-size: 4rem;  line-height: 1; margin: 1rem auto;}
