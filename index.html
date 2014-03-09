@@ -20,12 +20,25 @@
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
   </figure>
 </div>
-<h2>No frameworks. No plugins. Just CSS and 1.5K of vanilla JavaScript.<br>To use:</h2>
+<h2>No frameworks. No plugins. Just CSS and 1.5K of vanilla JavaScript.</h2>
 <script src="https://rawgithub.com/dudleystorey/CSSslidy/gh-pages/cssslidy.js"></script>
-<ol>
-<li>First
-<li>Second
-<li>Third
+<ol id="instructions">
+<li>Ensure that all the images you wish to use are exactly the same size or aspect ratio.
+<li>Place images inside a element with an <code>id</code> of <code>slidy</code>:
+<div>
+<pre><code>&lt;div id="slidy-container">
+  &lt;figure id="slidy"></code></pre>
+    &lt;img src="eyes.jpg" alt>
+    &lt;img src="lou.jpg" alt>
+    &lt;img src="lucielle.jpg" alt>
+    &lt;img src="lucie.jpg" alt>
+  &lt;/figure>
+&lt;/div>
+</code></pre>
+</div>
+<li>Ensure that the element is surrounded by another that has <code class="language-css">overflow: hidden</code> applied to it:
+<pre><code class="language-css">#slidy-container { width: 70%; overflow: hidden; }</code></pre>
+<li>Add <code>cssslidy.js</code> to the bottom of the page. Optionally, adjust timing variables.
 </ol>
 
 </body>
