@@ -9,3 +9,4 @@ background-color: #223; background-size: cover; background-repeat: no-repeat;
 background-attachment: fixed; font-family: "museo-sans",sans-serif; color: #fff; 
 }
 h1 { font-size: 4rem;  line-height: 1; margin: 1rem auto;}
+h2 { font-weight: 300; }
