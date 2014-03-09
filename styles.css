@@ -20,5 +20,5 @@ background: rgba(0,0,0,0.5);
 }
 #instructions { width: 66%; margin: 0 auto; text-align: left; font-size: 1.5rem; }
 a { text-decoration: none; }
-p.credit { margin-top: 2rem; background: rgba(0,0,0,0.4); }
+p.credit { margin-top: 2rem; background: rgba(0,0,0,0.4); padding: 1rem; }
 p.credit a { color: #fff; text-decoration: none; }
