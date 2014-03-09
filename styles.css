@@ -12,10 +12,10 @@ h2 { font-weight: 300; }
 ol { list-style-type: none; counter-reset: section; }
 li { counter-increment: section; margin-top: 2rem; }
 li:before { content: counters(section, ".")" "; ; border: 1px solid #fff; 
-border-radius: 50%; display: inline-block; width: 3rem; height: 2.5rem;
+border-radius: 50%; display: inline-block; width: 3.5rem; height: 2.5rem;
 text-align: center; padding-top: .75rem;
 margin-top: -1rem; font-weight: 700;
-margin-left: -3rem;
+margin-left: -5rem;
 background: rgba(0,0,0,0.5); 
 }
 #instructions { width: 66%; margin: 0 auto; text-align: left; font-size: 1.5rem; }
