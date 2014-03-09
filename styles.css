@@ -10,3 +10,11 @@ background-attachment: fixed; font-family: "museo-sans",sans-serif; color: #fff;
 }
 h1 { font-size: 4rem;  line-height: 1; margin: 1rem auto;}
 h2 { font-weight: 300; }
+ol { list-style-type: none; counter-reset: section; }
+li { counter-increment: section; margin-top: 2rem; }
+li:before { content: counters(section, ".")" "; ; border: 1px solid #fff; 
+border-radius: 50%; display: inline-block; width: 2.75rem; height: 2rem;
+text-align: center; padding-top: .75rem;
+margin-right: 2rem; margin-top: -1rem; font-weight: 700; 
+background: rgba(0,0,0,0.5); 
+}
