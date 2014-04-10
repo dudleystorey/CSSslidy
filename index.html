@@ -4,7 +4,7 @@
 <title>CSSslidy</title>
 <script type="text/javascript" src="//use.typekit.net/fqh2giq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<link rel="stylesheet" href="https://rawgithub.com/dudleystorey/CSSslidy/gh-pages/styles.css">
+<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/prism.css">
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/prism.js"></script>
 <meta charset=utf-8>
@@ -20,11 +20,14 @@
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
   </figure>
 </div>
-<h2>No frameworks. No plugins. Just CSS and 1.5K of vanilla JavaScript.</h2>
-<script src="https://rawgithub.com/dudleystorey/CSSslidy/gh-pages/cssslidy.js"></script>
+<h2>No frameworks. No plugins. Just CSS and 1.8K of vanilla JavaScript.</h2>
+<script type="text/javascript" src="cssslidy.js"></script>
+<script type="text/javascript">
+  cssSlidy();
+</script>
 <ol id="instructions">
 <li>Ensure that all the images you wish to use are exactly the same size.
-<li>Place images in a element with an <code>id</code> of <code>slidy</code>:
+<li>Create an element with an <code>id</code> of <code>slidy-container</code> and an element with an <code>id</code> of <code>slidy</code> containing your images:
 <div>
 <pre><code>&lt;div id="slidy-container">
   &lt;figure id="slidy">
@@ -36,11 +39,19 @@
 &lt;/div>
 </code></pre>
 </div>
-<li>Ensure that <code>slidy</code> is contained by an element that has <code class="language-css">overflow: hidden</code> applied to it:
-<pre><code class="language-css">#slidy-container { width: 70%; overflow: hidden; }</code></pre>
 <li>Add <a href="https://github.com/dudleystorey/CSSslidy/blob/gh-pages/cssslidy.js"><code>cssslidy.js</code></a>   to the bottom of the page.
+<li>Call <code>cssSlidy()</code>:
+<pre><code>&lt;script type="text/javascript"> cssSlidy(); &lt;/script>
+</code></pre>
 </ol>
-<p>Optional: adjust timing variables to adjust the pace of the animation (see source for more details)</p>
+<h2>Available Options:</h2>
+<p><code>timeOnSlide</code>: Amount of time (in seconds) per slide</p>
+<p><code>timeBetweenSlides</code>: Amount of time (in seconds) per transition</p>
+<p><code>slidyContainerSelector</code>: Define the ID used for the slidy container element</p>
+<p><code>slidySelector</code>: Define the ID used for the slidy element</p>
+<p><code>fallbackFunction</code>: Function called if CSS Animation is not supported</p>
+<p><code>cssAnimationName</code>: Name of CSS animation</p>
+<h3>See <a href="https://github.com/dudleystorey/CSSslidy/">documentation</a> for use of options.</h3>
 <p class="credit">Photographs by <a href=//500px.com/ap_photographie>AP Photographie</a> and <a href=//500px.com/DaCosta>Konstantin DaCosta</a>, licensed under Creative Commons.</p>
 </body>
 </html>
