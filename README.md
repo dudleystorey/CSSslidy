@@ -1,5 +1,5 @@
 #CSSslidy
-<<<<<<< HEAD
+
 An auto-generated, responsive CSS image slider
 
 ### Use:
