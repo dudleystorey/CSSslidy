@@ -1,0 +1,24 @@
+#slidy-container { 
+width: 50%; margin: 0 auto;
+box-shadow: 0 0 12px rgba(0,0,0,0.4); 
+}
+body { 
+text-align: center; 
+background-color: #200; font-family: "museo-sans",sans-serif; color: #fff; 
+}
+h1 { font-size: 4rem;  line-height: 1; margin: 1rem auto;}
+h2 { font-weight: 300; }
+h3 a { color: hsl(0,0%,33%); }
+ol { list-style-type: none; counter-reset: section; }
+li { counter-increment: section; margin-top: 2rem; }
+li:before { content: counters(section, ".")" "; ; border: 1px solid #fff; 
+border-radius: 50%; display: inline-block; width: 3.5rem; height: 2.5rem;
+text-align: center; padding-top: .75rem;
+margin-top: -1rem; font-weight: 700;
+margin-left: -5rem; margin-right: 3rem;
+background: rgba(0,0,0,0.5); 
+}
+#instructions { width: 66%; margin: 0 auto; text-align: left; font-size: 1.5rem; }
+a { text-decoration: none; }
+p.credit { margin-top: 2rem; background: rgba(0,0,0,0.4); padding: 1rem; }
+p.credit a { color: #fff; text-decoration: none; }

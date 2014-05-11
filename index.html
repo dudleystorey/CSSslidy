@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>CSSslidy</title>
+<script type="text/javascript" src="//use.typekit.net/fqh2giq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/prism.css">
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/prism.js"></script>
+<meta charset=utf-8>
+</head>
+<body class="language-markup">
+<a href="https://github.com/dudleystorey/CSSslidy/"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+<h1>CSS<em>slidy</em></h1>
+<div id="slidy-container">
+  <figure id="slidy">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/antelope-canyon.jpg" alt="Photograph of orange rock formations in Antelope Canyon, Arizona by eliyasj" data-caption="Antelope Canyon, Arizona">
+     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/canyonlands.jpg" alt="Broad vista photograph of Canyonlands National Park, Arizona, taken by Charles Martin" data-caption="Canyonlands Vista, Arizona" >
+     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mesa-arch.jpg" alt="Photograph looking through Mesa Arch at a sunrise in Moab, Utah, taken by Krasimir Ganchev" data-caption="Mesa Arch sunrise, Moab, Utah">
+     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wave-canyon.jpg" alt="Photograph of wave rock formations in Canyonlands National Park, Arizona, taken by Vanessa Kay" data-caption="Canyonlands, Arizona">
+  </figure>
+</div>
+<h2>No frameworks. No plugins. Just CSS and 3.8K of vanilla JavaScript.</h2>
+<script src="cssslidy.js"></script>
+<script>cssSlidy();</script>
+<ol id="instructions">
+<li>Ensure that all the images you wish to use are exactly the same size.
+<li>Create an element with an <code>id</code> of <code>slidy-container</code> and an element with an <code>id</code> of <code>slidy</code> containing your images. The images may have optional caption text as the value of their <code>alt</code> or <code>data-caption</code> attributes.
+<div>
+<pre><code>&lt;div id="slidy-container">
+  &lt;figure id="slidy">
+    &lt;img src="antelope-canyon.jpg" alt data-caption="Antelope Canyon, Arizona">
+    &lt;img src="canyonlands.jpg" alt data-caption="Canyonlands Vista, Arizona">
+    &lt;img src="mesa-arch.jpg" alt data-caption="Mesa Arch sunrise, Moab, Utah">
+    &lt;img src="wave-canyon.jpg" alt data-caption="Canyonlands, Arizona">
+  &lt;/figure>
+&lt;/div>
+</code></pre>
+</div>
+<li>Add <a href="https://github.com/dudleystorey/CSSslidy/blob/gh-pages/cssslidy.js"><code>cssslidy.js</code></a>   to the bottom of the page.
+<li>Call <code>cssSlidy()</code>:
+<pre><code>&lt;script> cssSlidy(); &lt;/script>
+</code></pre>
+</ol>
+<h2>Available Options:</h2>
+<div style="text-align:left;width:80%;margin:0 auto">
+<p><code>timeOnSlide</code>: Amount of time (in seconds) per slide
+<p><code>timeBetweenSlides</code>: Amount of time (in seconds) per transition</p>
+<p><code>slidyDirection</code>: Direction of slider movement: <code>left</code> by default, but may be set to <code>right</code>
+<p><code>captionSource</code>: Each image may display caption text. The caption content is drawn from the value of a <code>data-caption</code> attribute by default for accessibility, but <code>alt</code> may also be used, or <code>none</code>. Caption content should be short sentences.
+<p><code>captionBackground</code>: background color of the captions.
+<p><code>captionColor</code>: color of caption text. 
+<p><code>captionFont</code>: the font stack for the captions.
+<p><code>captionAppear</code>: how the caption appears. Permanent presentation of the caption text is the default option, the text can also <code>fade</code> or <code>slide</code> into place on mouseover.
+<p><code>captionPosition</code>: the caption can appear at the <code>bottom</code> of each image, or at the <code>top</code>. (<code>bottom</code> is the default).
+<p><code>captionSize</code> &amp; <code>captionPadding</code>: the <code class=language-css>font-size</code> and <code class=language-css>padding</code> of the caption text, respectively. Can be measured in any units you wish.
+<p><code>slidyContainerSelector</code>: Define the ID used for the slidy container element.
+<p><code>slidySelector</code>: Define the ID used for the slidy element.
+<p><code>fallbackFunction</code>: Function called if CSS Animation is not supported.
+<p><code>cssAnimationName</code>: Name of CSS animation.
+</div>
+<h3>See <a href="https://github.com/dudleystorey/CSSslidy/">documentation</a> for use of options.</h3>
+<p class="credit">Photographs by <a href=//500px.com/ap_photographie>Charles Martin</a>, <a href=//500px.com/DaCosta>Krasimir Ganchev</a>, Vanessa Kay and eliyasj, licensed under Creative Commons.</p>
+</body>
+</html>
