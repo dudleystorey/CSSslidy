@@ -35,7 +35,7 @@ var cssSlidy = function(newOptions) {
         // browser supports keyframe animation w/ prefixes
         if (CS.hasAnimation === false) {
           for (var i = 0; i < CS.domPrefixes.length; i++) {
-            if (CS.slidy.style[CS.domPrefixes[i] + 'AnimationName'] !== undefined) {
+            if (CS.element.style[CS.domPrefixes[i] + 'AnimationName'] !== undefined) {
               CS.pfx = domPrefixes[i];
               CS.animationString = pfx + 'Animation';
               CS.keyframeprefix = '-' + pfx.toLowerCase() + '-';
