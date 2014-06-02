@@ -82,8 +82,8 @@ var cssSlidy = function(newOptions) {
           css.type = "text/css";
           css.id = options.slidySelector.replace('#', '') + "-css";
           css.innerHTML += options.slidyContainerSelector + " { overflow: hidden; }\n";
-          css.innerHTML += options.slidySelector + " { margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the inner slider container
-          css.innerHTML += options.slidySelector + " figure { margin: 0; position: relative; display: inline-block; width: " + basePercentage + "%; height: auto; }\n"; // set the width and size pf the inner <figure> elements
+          css.innerHTML += options.slidySelector + " { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the inner slider container
+          css.innerHTML += options.slidySelector + " figure { float: left; margin: 0; position: relative; display: inline-block; width: " + basePercentage + "%; height: auto; }\n"; // set the width and size pf the inner <figure> elements
           css.innerHTML += options.slidySelector + " figure img { width: 100%; }\n";
           css.innerHTML += options.slidySelector + " figure figcaption { position: absolute; width: 100%; background-color: " + options.captionBackground + "; color: " + options.captionColor + "; font-family: " + options.captionFont + ";";
           
