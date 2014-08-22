@@ -1,0 +1,27 @@
+{
+  "name": "CSSslidy",
+  "main": "cssslidy.js",
+  "version": "2.0",
+  "homepage": "https://github.com/dudleystorey/CSSslidy",
+  "authors": [
+    "Dudley Storey <dudley.storey@gmail.com>"
+  ],
+  "description": "An auto-generated, responsive CSS image slider",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "responsive",
+    "slider",
+    "css3"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
